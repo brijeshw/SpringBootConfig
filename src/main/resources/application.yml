@@ -1,0 +1,29 @@
+
+server:  port: 9090
+  
+spring:  application:    name: SpringBootConfiguration
+    
+ftp:
+  sites:
+    FTPSite1:
+      name: site 1
+      host: google.com
+      port: 21
+      username: brijeshw
+      password: pwd
+    FTPSite2:
+      name: site 2
+      host: amazon
+      port: 21
+      username: amazon
+      password: password  
+  protocols: ftp,ftps,sftp
+  connection-timeout: 2000
+  idleTimeout: 5000 
+  
+logging:  file:    name: config.log
+    path: ./log
+   
+  
+    
+    
